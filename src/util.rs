@@ -56,10 +56,11 @@ pub fn u64_from_bytes(buf: &[u8]) -> Result<u64> {
 	Ok(value)
 }
 
-pub fn cyclic(size: usize) -> impl Iterator<Item = char> {
+pub fn cyclic(size: usize) -> String {
 	debruijn::debruijn(4, 26)
 		.take(size)
 		.map(|x| (x + b'A') as char)
+		.collect()
 }
 
 pub fn lookup(needle: &str) -> usize {
