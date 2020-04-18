@@ -1,3 +1,3 @@
 pub use crate::binary::*;
-pub use crate::ergonomics::*;
+pub use crate::comms::*;
 pub use crate::util::*;
