@@ -1,6 +1,6 @@
 [package]
 name = "ctftools"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Ben Lichtman"]
 edition = "2018"
 description = "Helper library for CTFs - based off pwntools for python3"
