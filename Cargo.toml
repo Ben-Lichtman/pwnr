@@ -1,9 +1,10 @@
 [package]
 name = "ctftools"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Ben Lichtman"]
 edition = "2018"
 description = "Helper library for CTFs - based off pwntools for python3"
+repository = "https://github.com/Ben-Lichtman/ctftools"
 license = "MIT OR Apache-2.0"
 
 [dependencies]
