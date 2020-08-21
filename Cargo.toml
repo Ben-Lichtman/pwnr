@@ -3,8 +3,8 @@ name = "ctftools"
 version = "0.1.0"
 authors = ["Ben Lichtman"]
 edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+description = "TLS intercepting web proxy inspired by Burp Suite and Mitmproxy"
+license = "MIT OR Apache-2.0"
 
 [dependencies]
 anyhow = "1.0.28"
@@ -12,5 +12,3 @@ goblin = "0.2.1"
 checksec = "0.0.4"
 sysexit = "0.2.0"
 memmap = "0.7.0"
-# falcon = "0.4.11"
-# falcon-finch = "0.4.6"

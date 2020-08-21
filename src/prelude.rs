@@ -1,3 +1,1 @@
-pub use crate::binary::*;
-pub use crate::comms::*;
-pub use crate::util::*;
+pub use crate::{binary::*, comms::*, util::*};

@@ -1,14 +1,15 @@
 use anyhow::Result;
 
-use std::collections::HashMap;
-use std::fs::{read, File};
-
-use goblin::mach::Mach;
-use goblin::Object;
+use goblin::{mach::Mach, Object};
 
 use checksec as cs;
 
 use memmap::Mmap;
+
+use std::{
+	collections::HashMap,
+	fs::{read, File},
+};
 
 pub fn get_symbols(file_name: &str) -> Result<HashMap<String, u64>> {
 	let object = read(&file_name)?;

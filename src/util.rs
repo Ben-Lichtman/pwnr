@@ -1,7 +1,6 @@
 use anyhow::Result;
 
-use std::io::stdin;
-use std::num::Wrapping;
+use std::{io::stdin, num::Wrapping};
 
 mod debruijn;
 

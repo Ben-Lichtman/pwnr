@@ -1,9 +1,11 @@
 use anyhow::Result;
 
-use std::io::{stdin, stdout, BufRead, BufReader, BufWriter, Read, Write};
-use std::net::TcpStream;
-use std::process::{Child, ChildStdin, ChildStdout, Command, ExitStatus, Stdio};
-use std::thread::spawn;
+use std::{
+	io::{stdin, stdout, BufRead, BufReader, BufWriter, Read, Write},
+	net::TcpStream,
+	process::{Child, ChildStdin, ChildStdout, Command, ExitStatus, Stdio},
+	thread::spawn,
+};
 
 const BUFFER_CAPACITY: usize = 1024;
 
