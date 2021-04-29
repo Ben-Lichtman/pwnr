@@ -8,8 +8,8 @@ repository = "https://github.com/Ben-Lichtman/ctftools"
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-anyhow = "1.0.28"
-goblin = "0.2.1"
-checksec = "0.0.4"
-sysexit = "0.2.0"
-memmap = "0.7.0"
+thiserror = "1.0.24"
+goblin = "0.3.4"
+ropr = "0.2.1"
+checksec = "0.0.8"
+

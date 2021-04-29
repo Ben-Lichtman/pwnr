@@ -1,4 +1,6 @@
-pub mod binary;
-pub mod comms;
-pub mod prelude;
+pub mod error;
+pub mod process;
 pub mod util;
+
+pub use checksec;
+pub use goblin;
