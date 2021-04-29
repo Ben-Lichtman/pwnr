@@ -1,9 +1,7 @@
 mod debruijn;
 
-pub fn cyclic(size: usize) -> impl Iterator<Item = char> {
-	debruijn::debruijn(4, 26)
-		.take(size)
-		.map(|x| (x + b'A') as char)
+pub fn cyclic() -> impl Iterator<Item = char> {
+	debruijn::debruijn(4, 26).map(|x| (x + b'A') as char)
 }
 
 pub fn lookup(needle: &str) -> usize {
