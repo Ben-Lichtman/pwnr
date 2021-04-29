@@ -4,7 +4,7 @@ version = "0.1.0"
 authors = ["Ben Lichtman"]
 edition = "2018"
 description = "Helper library for CTFs - based off pwntools for python3"
-repository = "https://github.com/Ben-Lichtman/ctftools"
+repository = "https://github.com/Ben-Lichtman/pwnr"
 license = "MIT OR Apache-2.0"
 
 [dependencies]
