@@ -137,6 +137,9 @@ impl Process for LocalProcess {
 				stdout
 					.write_all(&buffer[..n_bytes])
 					.expect("could not write to stdout");
+				if let Err(_) = stdout.flush() {
+					break;
+				}
 			}
 		});
 		let local_to_remote = spawn(move || {
@@ -221,6 +224,9 @@ impl Process for RemoteProcess {
 				stdout
 					.write_all(&buffer[..n_bytes])
 					.expect("could not write to stdout");
+				if let Err(_) = stdout.flush() {
+					break;
+				}
 			}
 		});
 		let local_to_remote = spawn(move || {
